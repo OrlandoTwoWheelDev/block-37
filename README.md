@@ -11,10 +11,11 @@ that a user can sign into (or create an account) and checkout reviews they have 
 ## The Climb
 - Create tables 
   - Customers #
-  - Products
-  - Reviews
-- Add info into tables
-- Check to ensure tables have been created in PSQL
+  - Products #
+  - Reviews #
+- Create functions in the seperate files #
+- Add info into tables #
+- Check to ensure tables have been created in PSQL #
 - Push to github
 
 ## The Nightmare
