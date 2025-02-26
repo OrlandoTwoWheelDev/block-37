@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "nodemon": "npm run",
-    "start": "node seed.cjs && node server.cjs"
+    "start": "node db/seed.cjs && node server.cjs"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
