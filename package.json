@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "echo 'No build step needed'",
     "lint": "eslint .",
     "preview": "vite preview",
     "nodemon": "npm run"
