@@ -12,4 +12,26 @@ const createProducts = async(name, description, price, category) => {
     console.log(`maybe start studying`, err);
   }
 }
-module.exports = { createProducts };
+
+const getProducts = async () => {
+  try {
+    const { rows } = await client.query('SELECT * FROM products;');
+    return rows;
+  } catch (err) {
+    console.error('Error retrieving products:', err);
+  }
+};
+
+const getProductById = async(id) => {
+  try{
+    const { rows } = await client.query(`
+      SELECT * FROM products
+      WHERE id = '${id}';
+      `);
+      return rows[0];
+  }catch(err){
+    console.log(err)
+  }
+}
+
+module.exports = { createProducts, getProducts, getProductById };
